@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let inputPhysics;
+        let inputChemistry;
+        let inputBiology;
+
+        inputPhysics = prompt("Enter Physics Score");
+        inputChemistry = prompt("Enter Chemistry Score");
+        inputBiology = prompt("Enter Biology Score");
+
+        let Physics = parseFloat(inputPhysics);
+        let Chemistry = parseFloat(inputChemistry);
+        let Biology = parseFloat(inputBiology);
+        
+        let average = (Physics + Chemistry + Biology)/3;
+        document.write("The Average Score is:"+ average);
+        document.write("<br/>");
+        let total = (Physics + Chemistry + Biology);
+        document.write("The Total Score is:"+ total);
+    </script>
+</body>
+</html>
